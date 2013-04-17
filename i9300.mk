@@ -50,9 +50,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GalaxyS3Settings \
     libsecril-client \
-    libsecril-client-sap
-
-#    SamsungServiceMode
+    libsecril-client-sap \
+    SamsungServiceMode
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -82,7 +81,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungExynos4RIL \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10
